@@ -1,7 +1,6 @@
 "use strict"
 
-module.exports = (input, { postfix = "rainbows" } = {}) => {
-	if (typeof input !== "string") throw new TypeError(`Expected a string, got ${typeof input}`)
+const niceTry = require("nice-try")
 
-	return `${input} & ${postfix}`
-}
+module.exports = (name) => niceTry(() => require(name))
+module.exports.resolve = (name) => niceTry(() => require.resolve(name))

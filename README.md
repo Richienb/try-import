@@ -1,41 +1,41 @@
-# The module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# Try Import [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/try-import/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/try-import)
 
-My awesome module.
+Try to import a module, returning undefined if failed.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/try-import.png)](https://npmjs.com/package/try-import)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install try-import
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module");
+const tryImport = require("try-import");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+tryImport("name");
+//=> () => { ... }
+
+tryImport.resolve("name");
+//=> 'C:\Users\richi\Documents\GitHub\try-import\node_modules\name\src\index.js'
 ```
 
 ## API
 
-### theModule(input, options?)
+### tryImport(name)
 
-#### input
+#### name
 
 Type: `string`
 
-Lorem ipsum.
+The module to try to import.
 
-#### options
+### tryImport.resolve(name)
 
-Type: `object`
+#### name
 
-##### postfix
+Type: `string`
 
-Type: `string`\
-Default: `rainbows`
-
-Lorem ipsum.
+The module to try to resolve.
