@@ -1,6 +1,6 @@
 {
 	"name": "try-import",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"description": "Try to import a module, returning undefined if failed.",
 	"repository": "https://github.com/Richienb/try-import.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
