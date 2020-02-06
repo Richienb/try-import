@@ -1,5 +1,5 @@
-const tryImport = require(".")
 const test = require("ava")
+const tryImport = require(".")
 
 test("main", (t) => {
 	t.is(tryImport("./fixtures/real"), "Hello World!")
